@@ -1,0 +1,19 @@
+To add videos to the Projects section:
+
+Option 1 - Google Drive (matches the current page)
+1. Upload the video to Google Drive.
+2. Right-click the video > Share > General access > Anyone with the link > Viewer.
+3. Copy the link. The file ID is the long text between /d/ and /view.
+4. In kishor-portfolio-premium.html, duplicate one project .vcard.
+5. Replace both links:
+   Preview: https://drive.google.com/file/d/YOUR_FILE_ID/preview
+   Open link: https://drive.google.com/file/d/YOUR_FILE_ID/view
+
+Option 2 - Local video file
+1. Put your .mp4 file in this assets/videos folder.
+2. Replace the iframe in a project card with:
+   <video controls preload="metadata">
+     <source src="assets/videos/your-video.mp4" type="video/mp4">
+   </video>
+
+The page now shows the first 3 Mind Media videos first. The Show More button reveals the remaining project videos.
